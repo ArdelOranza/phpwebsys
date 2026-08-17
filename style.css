@@ -1,0 +1,26 @@
+
+body { font-family: sans-serif; }
+
+
+.resume_container { 
+    border: 1px solid black; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 30px;     
+}
+
+
+.img_Prof { width: 150px; height: 150px; object-fit: cover; }
+
+p { font-size: 18px; margin: 5px 0; }
+h1, h2 { margin-bottom: 5px; }
+
+
+.details, .misc_details { 
+    display: flex; 
+    gap: 30px; 
+    flex-wrap: wrap;
+}
+
+.details p { font-weight: bold; }
+.detail_list { flex: 1; } 
