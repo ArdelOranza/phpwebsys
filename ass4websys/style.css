@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #34495e;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+input.error,
+textarea.error {
+    border-color: #e74c3c;
+}
+
+input.error:focus,
+textarea.error:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+button, .btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.1s;
+    border: none;
+}
+
+button[type="submit"], .btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+button[type="submit"]:hover, .btn-primary:hover {
+    background: #2980b9;
+}
+
+button[type="submit"]:active, .btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+.btn-back {
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+}
+
+.btn-back:hover {
+    background: #bdc3c7;
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.resume-header h1 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.resume-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.section p {
+    margin: 8px 0;
+    color: #34495e;
+}
+
+.print-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+@media print {
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+    .buttons, .print-buttons {
+        display: none;
+    }
+    body {
+        background: white;
+    }
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
